@@ -72,7 +72,7 @@ npm run deploy
 ```
 
 > **Note:** The canonical URL currently points to GitHub Pages:
-> `https://rawatriya7514-lab.github.io/artraw/`
+> `https://umeshartraw.github.io/artraw/`
 > (`artraw.dev` is **not registered** — check again before assuming it exists).
 >
 > If you later buy `artraw.dev`, switch back in 3 places: 1) `SITE_URL` in

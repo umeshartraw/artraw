@@ -70,7 +70,7 @@ export function observeElementsOnce(selector, callback, options = {}) {
 /**
  * Resolve a root-relative asset path against the build base URL, so the site
  * works identically when served from GitHub Pages (/artraw/) or a root
- * domain or the GitHub Pages root (rawatriya7514-lab.github.io/artraw/). Usage: `asset('/assets/images/foo.png')`.
+ * domain or the GitHub Pages root (umeshartraw.github.io/artraw/). Usage: `asset('/assets/images/foo.png')`.
  */
 export function asset(path) {
   if (!path) return path;

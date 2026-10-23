@@ -232,7 +232,7 @@ function navigate(route, replace = false, searchOverride = null) {
   }
 }
 
-const SITE_URL = 'https://rawatriya7514-lab.github.io/artraw';
+const SITE_URL = 'https://umeshartraw.github.io/artraw';
 
 const titles = {
   home: 'ARTRAW — Creative • Digital • Technology',

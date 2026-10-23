@@ -1056,7 +1056,7 @@ export const contactConfig = {
   timezone: 'IST (UTC+5:30)',
 
   social: {
-    github: 'https://github.com/rawatriya7514-lab',
+    github: 'https://github.com/umeshartraw',
     twitter: null,
     linkedin: null,
     instagram: null,

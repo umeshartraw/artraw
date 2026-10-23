@@ -74,7 +74,7 @@ export function createFooter() {
             <li><a href="mailto:rawateditzz@gmail.com" class="footer-link">rawateditzz@gmail.com</a></li>
             <li><a href="tel:9315878751" class="footer-link">+91 9315878751</a></li>
             <li><a href="https://wa.me/919315878751" target="_blank" rel="noopener noreferrer" class="footer-link">WhatsApp: 9315878751</a></li>
-            <li><a href="https://github.com/rawatriya7514-lab" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a></li>
+            <li><a href="https://github.com/umeshartraw" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a></li>
           </ul>
         </nav>
       </div>

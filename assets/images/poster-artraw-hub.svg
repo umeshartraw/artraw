@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="artraw-glow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.22"/>
+      <stop offset="35%" stop-color="#FF1E42" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#FF007F" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#070709" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="artraw-a-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1E42"/>
+      <stop offset="50%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#FF007F"/>
+    </linearGradient>
+    <linearGradient id="hub-frame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF1E42" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="artraw-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#070709"/>
+  <rect width="800" height="600" fill="url(#artraw-glow)"/>
+
+  <!-- Radar Circles -->
+  <g opacity="0.1" stroke="#00F0FF" stroke-width="1">
+    <circle cx="400" cy="270" r="140"/>
+    <circle cx="400" cy="270" r="230"/>
+    <circle cx="400" cy="270" r="320"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+  </g>
+
+  <!-- Top Header -->
+  <text x="60" y="50" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#00F0FF" letter-spacing="3">06 // FLAGSHIP SYSTEM HUB</text>
+  <text x="740" y="50" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#FFFFFF" letter-spacing="2" text-anchor="end">UMESH KUMAR · ARTRAW</text>
+
+  <!-- Central Monogram & Showcase Card -->
+  <g transform="translate(160, 90)">
+    <rect width="480" height="390" rx="24" fill="#0D0D14" stroke="url(#hub-frame)" stroke-width="2" filter="url(#artraw-bloom)"/>
+    
+    <!-- Central Brand A -->
+    <g transform="translate(240, 150)">
+      <!-- Pulsing Rings -->
+      <circle cx="0" cy="0" r="85" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="4,6" opacity="0.5"/>
+      <circle cx="0" cy="0" r="105" fill="none" stroke="#FF1E42" stroke-width="1" opacity="0.4"/>
+      
+      <!-- Big Glyph A -->
+      <text cx="0" cy="0" font-family="'Outfit', sans-serif" font-size="95" font-weight="900" fill="url(#artraw-a-grad)" text-anchor="middle" dominant-baseline="central" filter="url(#artraw-bloom)">A</text>
+    </g>
+
+    <!-- Title & Identity -->
+    <text x="240" y="275" font-family="'Outfit', sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">ARTRAW</text>
+    <text x="240" y="300" font-family="'Playfair Display', serif" font-style="italic" font-size="16" fill="#FF1E42" text-anchor="middle">Creative • Digital • Technology</text>
+    <text x="240" y="325" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#A1A1AA" text-anchor="middle" letter-spacing="1">LOCKED 60FPS · DUAL-PLATFORM READY</text>
+
+    <!-- Chips Row -->
+    <g transform="translate(45, 345)" font-family="'IBM Plex Mono', monospace" font-size="8">
+      <rect width="115" height="26" rx="13" fill="rgba(0,240,255,0.08)" stroke="#00F0FF" stroke-width="1"/>
+      <text x="57" y="17" fill="#00F0FF" text-anchor="middle">ON-DEVICE AI</text>
+
+      <rect x="135" width="115" height="26" rx="13" fill="rgba(255,30,66,0.08)" stroke="#FF1E42" stroke-width="1"/>
+      <text x="192" y="17" fill="#FF1E42" text-anchor="middle">HIGH-SPEED WEB</text>
+
+      <rect x="270" width="115" height="26" rx="13" fill="rgba(255,0,127,0.08)" stroke="#FF007F" stroke-width="1"/>
+      <text x="327" y="17" fill="#FF007F" text-anchor="middle">VISUAL CRAFT</text>
+    </g>
+  </g>
+
+  <!-- Left Technical Pill -->
+  <g transform="translate(50, 200)">
+    <rect width="90" height="140" rx="12" fill="rgba(13,13,18,0.85)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="45" y="35" font-family="'IBM Plex Mono', monospace" font-size="8" fill="#00F0FF" text-anchor="middle">STACK</text>
+    <text x="45" y="60" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">Vite 5</text>
+    <text x="45" y="80" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">GSAP 3</text>
+    <text x="45" y="100" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">Lenis</text>
+    <text x="45" y="120" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#22C55E" text-anchor="middle">60 FPS</text>
+  </g>
+
+  <!-- Right Architecture Pill -->
+  <g transform="translate(660, 200)">
+    <rect width="90" height="140" rx="12" fill="rgba(13,13,18,0.85)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="45" y="35" font-family="'IBM Plex Mono', monospace" font-size="8" fill="#FF1E42" text-anchor="middle">DEVICE</text>
+    <text x="45" y="60" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">Android</text>
+    <text x="45" y="80" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">Termux</text>
+    <text x="45" y="100" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle">Linux</text>
+    <text x="45" y="120" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#00F0FF" text-anchor="middle">Native</text>
+  </g>
+
+  <!-- Bottom Banner -->
+  <rect x="50" y="525" width="700" height="42" rx="8" fill="rgba(13,13,18,0.9)" stroke="rgba(0,240,255,0.3)" stroke-width="1"/>
+  <text x="75" y="551" font-family="'Outfit', sans-serif" font-size="13" fill="#FFFFFF" font-weight="bold">ARTRAW // THE CREATIVE TECHNOLOGY PRACTICE OF UMESH KUMAR</text>
+  <text x="725" y="551" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#00F0FF" text-anchor="end" letter-spacing="2">AUTHENTIC SOURCE</text>
+</svg>

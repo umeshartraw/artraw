@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ayur-glow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.2"/>
+      <stop offset="40%" stop-color="#D97706" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#070709" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="amber-bottle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#78350F"/>
+      <stop offset="25%" stop-color="#D97706"/>
+      <stop offset="70%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+    <linearGradient id="gold-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <filter id="gold-bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#070709"/>
+  <rect width="800" height="600" fill="url(#ayur-glow)"/>
+
+  <!-- Minimalist Grid Lines -->
+  <g opacity="0.12" stroke="#FFFFFF" stroke-width="1">
+    <line x1="60" y1="0" x2="60" y2="600"/>
+    <line x1="740" y1="0" x2="740" y2="600"/>
+    <line x1="0" y1="70" x2="800" y2="70"/>
+    <line x1="0" y1="520" x2="800" y2="520"/>
+  </g>
+
+  <!-- Header -->
+  <text x="60" y="48" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#F59E0B" letter-spacing="3">04 // E-COMMERCE STOREFRONT ARCHITECTURE</text>
+  <text x="740" y="48" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#00F0FF" letter-spacing="2" text-anchor="end">AYUR VEDA GLOBAL · NEXT.JS</text>
+
+  <!-- Left: Botanical Apothecary Bottle Mockup -->
+  <g transform="translate(140, 110)">
+    <!-- Dropper Pipette Top -->
+    <rect x="75" y="0" width="30" height="40" rx="4" fill="#18181B" stroke="#F59E0B" stroke-width="1"/>
+    <rect x="83" y="-15" width="14" height="18" rx="7" fill="#27272A"/>
+    <!-- Bottle Collar -->
+    <rect x="65" y="40" width="50" height="20" rx="3" fill="#D97706" opacity="0.9"/>
+    <!-- Amber Bottle Body -->
+    <rect x="30" y="60" width="120" height="260" rx="28" fill="url(#amber-bottle)" stroke="rgba(245,158,11,0.5)" stroke-width="1.5" filter="url(#gold-bloom)"/>
+    <!-- Glass Highlights -->
+    <rect x="42" y="75" width="10" height="230" rx="5" fill="#FFFFFF" opacity="0.35"/>
+    <rect x="58" y="85" width="3" height="210" rx="1.5" fill="#FFFFFF" opacity="0.2"/>
+
+    <!-- Bottle Label -->
+    <rect x="42" y="120" width="96" height="150" rx="6" fill="#F4F4F6" stroke="#070709" stroke-width="1"/>
+    <text x="90" y="145" font-family="'IBM Plex Mono', monospace" font-size="7" fill="#71717A" text-anchor="middle" letter-spacing="1">AUTHENTIC AYURVEDA</text>
+    <text x="90" y="165" font-family="'Playfair Display', serif" font-size="11" font-weight="bold" fill="#070709" text-anchor="middle">ASHWAGANDHA</text>
+    <text x="90" y="180" font-family="'IBM Plex Mono', monospace" font-size="8" fill="#B45309" text-anchor="middle">PURE ROOT EXTRACT</text>
+    <line x1="55" y1="190" x2="125" y2="190" stroke="#D1D5DB"/>
+    <!-- Leaf Icon SVG inside label -->
+    <circle cx="90" cy="215" r="14" fill="#070709"/>
+    <path d="M 85 220 Q 90 207, 95 220 Z" fill="#F59E0B"/>
+    <text x="90" y="248" font-family="'IBM Plex Mono', monospace" font-size="7" fill="#71717A" text-anchor="middle">50 ML · 1.7 FL OZ</text>
+  </g>
+
+  <!-- Right: Next.js E-Commerce UI Storefront Card -->
+  <g transform="translate(370, 110)">
+    <rect width="360" height="370" rx="18" fill="#0D0D14" stroke="url(#gold-border)" stroke-width="1.5" filter="url(#gold-bloom)"/>
+    
+    <!-- Header of UI Card -->
+    <rect width="360" height="42" rx="18" fill="rgba(255,255,255,0.03)"/>
+    <text x="24" y="26" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#00F0FF" letter-spacing="1">NEXT.JS 14 STOREFRONT</text>
+    <text x="336" y="26" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#22C55E" text-anchor="end">● IN STOCK</text>
+
+    <g transform="translate(24, 65)">
+      <text y="14" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#F59E0B" letter-spacing="2">HERBAL TINCTURE NO. 04</text>
+      <text y="42" font-family="'Playfair Display', serif" font-size="22" font-weight="bold" fill="#FFFFFF">Organic Ashwagandha</text>
+      <text y="64" font-family="'Outfit', sans-serif" font-size="13" fill="#A1A1AA">Direct root extraction formulated for vitality & sleep support.</text>
+      
+      <!-- Stars & Reviews -->
+      <g transform="translate(0, 85)" fill="#F59E0B">
+        <text font-size="14">★★★★★</text>
+        <text x="75" y="-1" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#A1A1AA">(4.9/5 · 128 verified)</text>
+      </g>
+
+      <!-- Price Box -->
+      <g transform="translate(0, 115)">
+        <text y="24" font-family="'Outfit', sans-serif" font-size="26" font-weight="900" fill="#FFFFFF">$42.00</text>
+        <text x="95" y="16" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#71717A" text-decoration="line-through">$54.00</text>
+        <rect x="145" y="4" width="65" height="20" rx="10" fill="rgba(34,197,94,0.15)" stroke="#22C55E" stroke-width="1"/>
+        <text x="177" y="18" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#22C55E" text-anchor="middle" font-weight="bold">SAVE 22%</text>
+      </g>
+
+      <!-- Quantity & Add to Cart -->
+      <g transform="translate(0, 170)">
+        <rect width="70" height="42" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+        <text x="35" y="26" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#FFFFFF" text-anchor="middle">QTY: 1</text>
+        
+        <rect x="85" y="0" width="225" height="42" rx="8" fill="linear-gradient(90deg, #F59E0B, #D97706)"/>
+        <text x="197" y="26" font-family="'Outfit', sans-serif" font-size="13" font-weight="bold" fill="#070709" text-anchor="middle">ADD TO BAG →</text>
+      </g>
+
+      <!-- Storefront Features Checklist -->
+      <g transform="translate(0, 240)" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#A1A1AA">
+        <text y="0"><tspan fill="#00F0FF">✓</tspan> Next.js App Router Architecture</text>
+        <text y="20"><tspan fill="#00F0FF">✓</tspan> TypeScript State & Dynamic Cart</text>
+        <text y="40"><tspan fill="#00F0FF">✓</tspan> 100% Real Codebase in Workspace</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Banner -->
+  <rect x="60" y="525" width="680" height="42" rx="8" fill="rgba(13,13,18,0.9)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="85" y="551" font-family="'Outfit', sans-serif" font-size="13" fill="#FFFFFF" font-weight="bold">AYUR VEDA GLOBAL // NEXT.JS STOREFRONT & CATALOG</text>
+  <text x="715" y="551" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#F59E0B" text-anchor="end" letter-spacing="2">AUTHENTIC BUILD</text>
+</svg>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTRAW — Redirecting</title>
+  <script>
+    (function() {
+      var base = '/artraw/';
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      // Store the original route so the SPA router can render it after redirect
+      sessionStorage.setItem('artraw-spa-fallback', path + search + hash);
+
+      // Redirect to the SPA entry point
+      window.location.replace(base + 'index.html');
+    })();
+  </script>
+</head>
+<body>
+  <p style="font-family:system-ui,sans-serif;color:#fafafa;padding:2rem;">Redirecting to ARTRAW…</p>
+</body>
+</html>

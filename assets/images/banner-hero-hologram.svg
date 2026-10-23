@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pano-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1E42" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#00F0FF" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#FF007F" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="pano-back" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#FF007F" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#070709" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="20" fill="#0D0D14" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+  <rect width="1200" height="300" rx="20" fill="url(#pano-back)"/>
+
+  <!-- Top Laser Beam -->
+  <line x1="20" y1="2" x2="1180" y2="2" stroke="url(#pano-grad)" stroke-width="3"/>
+
+  <!-- Background Technical Grid -->
+  <g opacity="0.08" stroke="#00F0FF" stroke-width="1">
+    <line x1="0" y1="75" x2="1200" y2="75"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="225" x2="1200" y2="225"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="900" y1="0" x2="900" y2="300"/>
+  </g>
+
+  <!-- Left Column: Edge AI Core -->
+  <g transform="translate(40, 45)">
+    <rect width="250" height="210" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(0,240,255,0.25)" stroke-width="1"/>
+    <text x="20" y="32" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#00F0FF" font-weight="bold">01 // EDGE AI RUNTIME</text>
+    <text x="20" y="60" font-family="'Outfit', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Lucy AI & Agents</text>
+    <text x="20" y="85" font-family="'Outfit', sans-serif" font-size="12" fill="#A1A1AA">Local LLM dispatch on Android mobile hardware.</text>
+    
+    <g transform="translate(20, 110)">
+      <path d="M 0 25 Q 15 0, 30 25 T 60 25 T 90 5 T 120 40 T 150 25 T 180 25 T 210 25" fill="none" stroke="#00F0FF" stroke-width="2"/>
+    </g>
+    
+    <g transform="translate(20, 175)">
+      <rect width="100" height="22" rx="11" fill="rgba(0,240,255,0.1)"/>
+      <text x="50" y="15" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#00F0FF" text-anchor="middle">ACTIVE KERNEL</text>
+    </g>
+  </g>
+
+  <!-- Middle Column: Web Architecture -->
+  <g transform="translate(330, 45)">
+    <rect width="540" height="210" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(255,30,66,0.25)" stroke-width="1"/>
+    <text x="24" y="32" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#FF1E42" font-weight="bold">02 // DIGITAL ARCHITECTURE & TELEMETRY</text>
+    <text x="24" y="60" font-family="'Outfit', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">High-Speed Motion & Storefront Systems</text>
+    
+    <g transform="translate(24, 80)" font-family="'IBM Plex Mono', monospace" font-size="11">
+      <text y="20" fill="#A1A1AA">FRAME BUDGET: <tspan fill="#22C55E">16.6ms (LOCKED 60 FPS)</tspan></text>
+      <text y="42" fill="#A1A1AA">ENGINE: <tspan fill="#00F0FF">LENIS INERTIA + GSAP SCROLLTRIGGER</tspan></text>
+      <text y="64" fill="#A1A1AA">MOBILE VIEWPORT: <tspan fill="#FF007F">STRICT 100DVH (ZERO ADDRESS-BAR JITTER)</tspan></text>
+      <text y="86" fill="#A1A1AA">PRODUCTION CODEBASES: <tspan fill="#FFFFFF">100% REAL IN REPOSITORY</tspan></text>
+    </g>
+
+    <!-- Visual Progress Bar inside middle card -->
+    <g transform="translate(24, 185)">
+      <rect width="492" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+      <rect width="420" height="6" rx="3" fill="url(#pano-grad)"/>
+    </g>
+  </g>
+
+  <!-- Right Column: Visual Craft -->
+  <g transform="translate(910, 45)">
+    <rect width="250" height="210" rx="14" fill="rgba(255,255,255,0.02)" stroke="rgba(255,0,127,0.25)" stroke-width="1"/>
+    <text x="20" y="32" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#FF007F" font-weight="bold">03 // VISUAL DIRECTION</text>
+    <text x="20" y="60" font-family="'Outfit', sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">HF RECORD</text>
+    <text x="20" y="85" font-family="'Outfit', sans-serif" font-size="12" fill="#A1A1AA">Music release visuals, video direction, and generative art.</text>
+
+    <!-- Mini Equalizer -->
+    <g transform="translate(20, 115)" fill="#FF007F">
+      <rect x="0" y="20" width="8" height="20" rx="2"/>
+      <rect x="14" y="5" width="8" height="35" rx="2"/>
+      <rect x="28" y="12" width="8" height="28" rx="2"/>
+      <rect x="42" y="0" width="8" height="40" rx="2" fill="#00F0FF"/>
+      <rect x="56" y="16" width="8" height="24" rx="2"/>
+      <rect x="70" y="8" width="8" height="32" rx="2"/>
+      <rect x="84" y="22" width="8" height="18" rx="2"/>
+      <rect x="98" y="4" width="8" height="36" rx="2"/>
+      <rect x="112" y="14" width="8" height="26" rx="2"/>
+      <rect x="126" y="2" width="8" height="38" rx="2" fill="#FF1E42"/>
+      <rect x="140" y="18" width="8" height="22" rx="2"/>
+      <rect x="154" y="10" width="8" height="30" rx="2"/>
+      <rect x="168" y="22" width="8" height="18" rx="2"/>
+      <rect x="182" y="6" width="8" height="34" rx="2"/>
+      <rect x="196" y="15" width="8" height="25" rx="2"/>
+    </g>
+
+    <g transform="translate(20, 175)">
+      <rect width="100" height="22" rx="11" fill="rgba(255,0,127,0.1)"/>
+      <text x="50" y="15" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#FF007F" text-anchor="middle">STUDIO MASTER</text>
+    </g>
+  </g>
+</svg>
